@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>4 uzduotis</title>
+   <title>Kartojimo uzduotis</title>
 </head>
 <body>
    <form action="">
@@ -14,8 +14,27 @@
       <label for="pass">Confirm password:</label>
       <input type="confirmpassword" name="pass" id="pass"><br>
       <label for="img">Choose a profile picture:</label>
-      <input type="file" id="img" name="img" accept="" />
+      <input type="file" id="img" name="img" accept="" /><br>
       <label for="gender">Gender:</label>
+      <input type="radio" name="gender" id="gender">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="gender">
+      <label for="male">Male</label><br>
+      <label for="country">Select country:</label>
+      <select name="country" id="country">
+         <option value="lt">Lithuania</option>
+         <option value="lv">Latvia</option>
+         <option value="est">Estija</option>
+         <option value="uk">United Kingdom</option>
+      </select><br>
+      <label for="hobby">Hobby:</label>
+      <input type="checkbox" name="cricket" id="cricket">
+      <label for="cricket">Cricket</label>
+      <input type="checkbox" name="football" id="football">
+      <label for="football">Football</label><br>
+      <label for="adress">Adress:</label>
+      <textarea name="adress" id="adress" cols="20" rows="10"></textarea><br>
+      <button type="submit">Submit</button>
    </form>
 </body>
 </html>
