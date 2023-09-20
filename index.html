@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Forma 5 užduotis </title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <fieldset>
+      <legend>5 Užduotis forma</legend>
+   
+      <form action="">
+            <label for="name" >Vardas:</label>
+            <input type="text" name="name" id="name" required
+            placeholder="Vardas"><br>
+            <label for="surname">Pavardė:</label>
+            <input type="text" name="surname" id="surname" placeholder="Pavardė"><br>
+            <label for="email">E.paštas</label>
+            <input type="email" name="email" id="email" placeholder="@email" required><br>
+            <label for="password">Slaptažodis</label>
+            <input type="password" name="password" id="password" required placeholder="Slaptažodis"><br>
+         <fieldset>
+            <legend>Sugrupuota pristatymo adeso informacija:</legend>
+            <label for="adress">Gatvė</label>
+            <input type="text" name="adress" id="adress" required placeholder="Gatvė"><br>
+            <label for="homeNumber">homeNumber</label>
+            <input type="text" name="text" id="homeNumber" required placeholder="Namo Numeris"><br>
+            <label for="city">Miestas:</label>
+            <select name="city" id="city">
+               <option value="">---Pasirinkite miestą---</option>
+               <option value="kaunas">Kaunas</option>
+               <option value="vilnius">Vilnius</option>
+               <option value="klaipeda">Klaipėda</option>
+               <option value="jonava">Jonava</option>
+               <option value="panevezys">Panevėžys</option>
+               <option value="siauliai">Šiauliai</option>
+               <option value="alytus">Alytus</option>
+            </select>
+         </fieldset>
+         <fieldset>
+            <legend>Apmokėjimas</legend>
+            <input type="radio" id="visa" name="payment"  checked>
+            <label for="revolut">Revolut</label><br>
+            <input type="radio" id="revolut" name="payment"  >
+            <label for="visa">Visa</label><br>
+            <input type="radio" id="cash" name="payment" >
+            <label for="cash">Cash</label><br>
+            <input type="radio" id="transfer" name="payment"  >
+            <label for="visa">Transfer</label><br>
+         </fieldset>
+            <legend>Pasirinkite dovanas:</legend>
+            <input type="checkbox" id="piestukas" name="piestukas">
+            <label for="piestukas">Pieštukas</label><br>
+            <input type="checkbox" id="laiskas" name="laiskas">
+            <label for="laiskas">Laiškas</label><br>
+            <input type="checkbox" id="pakabukas" name="pakabukas">
+            <label for="pakabukas">Pakabukas</label><br>
+            <input type="checkbox" id="usb" name="usb">
+            <label for="usb">USB</label><br>
+            <input type="checkbox" id="sasiuvinis" name="sasiuvinis">
+            <label for="sasiuvinis">Sąsiuvinis</label><br>
+            <input type="checkbox" id="knyga" name="knyga">
+            <label for="knyga">Knyga</label><br>
+            <input type="checkbox" id="5%nuolaida" name="5%nuolaida">
+            <label for="5%nuolaida">5%nuolaida</label><br>
+
+            <label for="opinion">====Jūsų nuomonė====</label><br>
+            <textarea name="opinion" id="opinion" cols="40" rows="5" placeholder="Kokia jūsų nuomonė?" maxlength="200" disabled></textarea><br>
+            <button class="submit" type="button">Patvirtinti</button>
+      </form>
+   </fieldset>
+</body>
+</html>

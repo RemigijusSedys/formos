@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Forma 6 užduotis </title>
+
+</head>
+<body>
+   <fieldset>
+      <legend>Užsakymas</legend>
+      <form action="">
+      <label for="userid">User ID</label>
+      <input type="text" name="userid" id="userid" placeholder="Userid" required pattern="[a-zA-Z0-9-]"><br>
+      <label for="password">Password</label>
+      <input type="text" name="password" id="password"  placeholder="Password" required minlength="7" maxlength="12"><br>
+      <label for="name">Vardas</label>
+      <input type="text" name="name" id="name" placeholder="Vardas tik iš raidžių" required minlength="1" pattern="^[a-zA-Z]+$"><br>
+      <label for="adress">Adresas</label>
+      <input type="text" name="adress" id="adress" placeholder="Adresas"><br>
+      <label for="country">Miestas:</label>
+      <select name="country" id="country">
+         <option value="">---Pasirinkite šalį---</option>
+         <option value="lietuva">Lietuva</option>
+         <option value="lenkija">Lenkija</option>
+         <option value="latvija">Latvija</option>
+         <option value="estija">Estija</option>
+         <option value="suomija">Suomija</option>
+         <option value="svedija">Švedija</option>
+         <option value="danija">Danija</option>
+      </select><br>
+      <label for="zip">Zip kodas:</label>
+      <input type="number" minlength="1" required placeholder="Zip code" pattern="[0-9-]"><br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Elektroninis" required><br>
+      <label for="sex">Lytis:</label>
+      <input type="radio" id="male" name="male">
+      <label for="male">Vyras</label>
+      <input type="radio" id="female" name="male">
+      <label for="female">Moteris</label><br>
+      <label for="lang">Kalba: </label>
+      <label for="lt">lt</label>
+      <input type="checkbox" name="lt" id="lt">
+      <label for="lt">eng</label>
+      <input type="checkbox" name="eng" id="eng">
+      <label for="jap">japan</label>
+      <input type="checkbox" name="jap" id="jap"><br>
+      <label for="about">Apie:</label>
+      <textarea name="about" id="about" cols="50" rows="10" disabled></textarea disabled><br>
+      <button type="submit" value="submit">Pateikti</button>
+      </form>
+   </fieldset>
+</body>
+</html>
